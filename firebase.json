@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site":"myaurapp",
+    "site":"dsc-upt",
     "public": "dist",
     "rewrites": [ {
         "source": "**",
