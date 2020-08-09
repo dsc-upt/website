@@ -1,5 +1,5 @@
 <template>
-    <v-content class="ma-0">
+    <v-main class="ma-0">
 
         <v-container fluid class="">
             <v-row justify="center" align="center">
@@ -58,7 +58,7 @@
             </v-row>
         </v-container>
 
-    </v-content>
+    </v-main>
 
 </template>
 
