@@ -9,7 +9,7 @@ self.addEventListener('message', (e) => {
     }
 });
 
-var dataPush = {};
+let dataPush = {};
 
 self.addEventListener('push', (event)=>{
     if (event.data) {
@@ -17,24 +17,24 @@ self.addEventListener('push', (event)=>{
         dataPush = data.notification;
         dataPush.body = JSON.parse(dataPush.body);
     }
-    var options = {
-        body: dataPush.body.body,
-        icon: 'img/icons/favicon-32x32.png',
-        dir: 'ltr',
-        image: dataPush.image,
-        badge: 'img/icons/favicon-32x32.png',
-        tag: dataPush.tag,
-        requireInteraction:true,
-        renotify: true,
-        actions: [{
-            action: 'register',
-            title: 'Register'
-        },{
-            action: 'visit',
-            title: 'Learn More'
-        }]
-    };
-    event.waitUntil(self.registration.showNotification(dataPush.title, options));
+        const options = {
+            body: dataPush.body.body,
+            icon: 'img/icons/favicon-32x32.png',
+            dir: 'ltr',
+            image: dataPush.image,
+            badge: 'img/icons/favicon-32x32.png',
+            tag: dataPush.tag,
+            requireInteraction: true,
+            renotify: true,
+            actions: [{
+                action: 'register',
+                title: 'Register'
+            }, {
+                action: 'visit',
+                title: 'Learn More'
+            }]
+        };
+        event.waitUntil(self.registration.showNotification(dataPush.title, options));
 }
 );
 self.addEventListener('notificationclick', function(event) {

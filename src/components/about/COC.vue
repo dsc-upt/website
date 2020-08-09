@@ -7,18 +7,16 @@
         </v-row>
         <v-row class="py-0 my-0">
             <v-col md="8" sm="12" cols="12" class="py-0 my-0">
-                <p class="google-font" style="font-size:110%">{{data}}</p>
+                <p class="google-font" style="font-size:110%">{{ data }}</p>
             </v-col>
-            
+
         </v-row>
     </v-container>
 </template>
 
 <script>
 export default {
-    props:['data'],
-    data:()=>({
-
-    })
+    props: ['data'],
+    data: () => ({})
 }
 </script>

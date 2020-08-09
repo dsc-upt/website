@@ -5,13 +5,13 @@
     font-display: swap;
 }
 .google-font{
-    font-family: google-sans
-};
+    font-family: google-sans, sans-serif
+}
 html{
     overflow-x: hidden;
 }
 body{
-    font-family: google-sans
+    font-family: google-sans, sans-serif
 }
 
 .card-light{

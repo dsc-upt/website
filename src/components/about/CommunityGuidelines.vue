@@ -14,9 +14,9 @@
                         v-for="(item,i) in data"
                         :key="i"
                     >
-                        <v-expansion-panel-header>{{item.name}}</v-expansion-panel-header>
+                        <v-expansion-panel-header>{{ item.name }}</v-expansion-panel-header>
                         <v-expansion-panel-content>
-                            {{item.des}}
+                            {{ item.des }}
                         </v-expansion-panel-content>
                     </v-expansion-panel>
                 </v-expansion-panels>
@@ -30,25 +30,23 @@
                 >
                     <template v-slot:placeholder>
                         <v-row
-                        class="fill-height ma-0"
-                        align="center"
-                        justify="center"
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
                         >
-                        <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                            <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
                         </v-row>
                     </template>
                 </v-img>
             </v-col>
-            
+
         </v-row>
     </v-container>
 </template>
 
 <script>
 export default {
-    props:['data'],
-    data:()=>({
-
-    })
+    props: ['data'],
+    data: () => ({})
 }
 </script>

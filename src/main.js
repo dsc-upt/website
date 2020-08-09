@@ -8,13 +8,11 @@ import generalFunctions from './functions/generalFunctions'
 import './style.css'
 
 
-
-
 Vue.config.productionTip = false
-Vue.mixin(generalFunctions); 
+Vue.mixin(generalFunctions);
 new Vue({
-  router,
-  store,
-  vuetify,
-  render: h => h(App)
+    router,
+    store,
+    vuetify,
+    render: h => h(App)
 }).$mount('#app')
